@@ -1,0 +1,18 @@
+.as {
+  .as-item {
+    display: block;
+    background-color: whitesmoke;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 13px !important;
+    margin: 15px;
+    .as-title{
+        text-align: center;
+        margin-bottom: 0.6em;
+    }
+    button{
+        display: block;
+        margin: 10px auto 0px auto;
+    }
+  }
+}

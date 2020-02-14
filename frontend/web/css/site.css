@@ -1,0 +1,583 @@
+@font-face {
+  font-family: 'Adelle Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle Regular"), url("/frontend/web/fonts/Adelle/Adelle_Reg.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle Italic"), url("/frontend/web/fonts/Adelle/Adelle_Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle Light Italic"), url("/frontend/web/fonts/Adelle/Adelle_LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle Light"), url("/frontend/web/fonts/Adelle/Adelle_light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle SemiBold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle SemiBold Italic"), url("/frontend/web/fonts/Adelle/Adelle_SemiBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle SemiBold"), url("/frontend/web/fonts/Adelle/Adelle_Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle Bold"), url("/frontend/web/fonts/Adelle/Adelle_Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle Bold Italic"), url("/frontend/web/fonts/Adelle/Adelle_BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle ExtraBold"), url("/frontend/web/fonts/Adelle/Adelle_ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle ExtraBold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle ExtraBold Italic"), url("/frontend/web/fonts/Adelle/Adelle_ExtraBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle Heavy"), url("/frontend/web/fonts/Adelle/Adelle_Heavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle Heavy Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle Heavy Italic"), url("/frontend/web/fonts/Adelle/Adelle_HeavyItalic.woff") format("woff");
+}
+
+.ticker {
+  background-color: #347dc1;
+  color: white;
+  height: 60px;
+  width: calc(100vw - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 15;
+}
+
+.ticker .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ticker .block img {
+  margin-left: 100px;
+}
+
+.ticker .block h5 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.news .page-title {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news .page-title .line {
+  width: 47px;
+  height: 3px;
+  background-color: #ed4d4b;
+  margin: 0 7px;
+}
+
+.news .info {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.news .post {
+  margin-bottom: 30px;
+}
+
+.news .post .post-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+}
+
+.news .post .post-body:hover .text .discr {
+  height: 103px;
+}
+
+.news .post .post-body .text {
+  padding: 0 7px;
+  color: white;
+  background-color: #347dc1cf;
+  width: 100%;
+}
+
+.news .post .post-body .text .title {
+  display: block;
+  width: 100%;
+  max-height: 137px;
+  overflow: hidden;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.news .post .post-body .text .discr {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  height: 0;
+  -webkit-transition: height cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: height cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+.services-list {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 30px;
+  background-color: whitesmoke;
+}
+
+.services-list ul {
+  list-style-type: square;
+}
+
+.services-list ul li {
+  color: #347dc1;
+}
+
+.services-list ul li span {
+  color: black;
+}
+
+.services-list .title {
+  font-weight: 400;
+}
+
+.as .as-item {
+  display: block;
+  background-color: whitesmoke;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 13px !important;
+  margin: 15px;
+}
+
+.as .as-item .as-title {
+  text-align: center;
+  margin-bottom: 0.6em;
+}
+
+.as .as-item button {
+  display: block;
+  margin: 10px auto 0px auto;
+}
+
+html,
+body {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.9);
+}
+
+.wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+
+.wrap > .container {
+  padding: 70px 15px 20px;
+}
+
+.footer {
+  height: 60px;
+  margin-bottom: 60px;
+  background-color: #347dc1;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  color: white;
+}
+
+.footer a {
+  color: white !important;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.not-set {
+  color: #c55;
+  font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after,
+a.desc:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 5px;
+}
+
+a.asc:after {
+  content: "\e151";
+}
+
+a.desc:after {
+  content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+  content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+  content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+  content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+  content: "\e156";
+}
+
+.grid-view td {
+  white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+  min-width: 50px;
+}
+
+.hint-block {
+  display: block;
+  margin-top: 5px;
+  color: #999;
+}
+
+.error-summary {
+  color: #a94442;
+  background: #fdf7f7;
+  border-left: 3px solid #eed3d7;
+  padding: 10px 20px;
+  margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+  padding: 15px;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .nav li > form > button.logout {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 10px 15px;
+  }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+  text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+  outline: none;
+}
+
+nav {
+  border-bottom: 3px solid #347dc1;
+}
+
+.navbar-nav .dropdown-menu {
+  float: right;
+  right: 0;
+  border-color: transparent;
+  border-radius: 3px;
+  border-bottom: 3px #347dc1 solid;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar #navbarNav {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.navbar .navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px 10px;
+}
+
+.navbar .navbar-brand span {
+  font-weight: 400;
+  line-height: 1.3;
+  font-size: 19px;
+  margin-left: 8px;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+}
+
+.navbar a.nav-link {
+  color: black !important;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0 8px 15px !important;
+}
+
+.navbar-brand .logo {
+  background-image: url(/frontend/web/img/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 70px;
+  height: 60px;
+}
+
+.autodor-container {
+  padding-top: 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-title .line {
+  width: 47px;
+  height: 3px;
+  background-color: #ed4d4b;
+  margin: 0 7px;
+}
+
+.autodor-page {
+  width: 100%;
+}
+
+.autodor-page .slider .carousel-inner {
+  height: 550px;
+}
+
+.autodor-page .slider .carousel-inner .carousel-item {
+  width: inherit;
+  height: inherit;
+}
+
+.autodor-page .slider .carousel-inner .carousel-item .img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.autodor-page .slider .carousel-inner .carousel-item .text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #347dc1;
+  color: white;
+  padding: 10px 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.autodor-page .name-enterprise {
+  background-color: #347dc1;
+}
+
+.autodor-page .name-enterprise .container .name {
+  font-weight: 300;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 33px;
+}
+
+.autodor-page .about-enterprise {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 25px;
+}
+
+.autodor-page .about-enterprise h1 {
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.autodor-page .our-achievements {
+  margin: 30px auto 55px;
+}
+
+.autodor-page .our-achievements .block-title {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.autodor-page .our-achievements .item {
+  padding-top: 45px;
+}
+
+.autodor-page .our-achievements .item .num {
+  color: rgba(56, 126, 191, 0.5);
+  font-size: 130px;
+  line-height: 0.7;
+  display: block;
+  position: absolute;
+  width: 75px;
+  text-align: center;
+  font-family: "Adelle Regular";
+}
+
+.autodor-page .our-achievements .item .text {
+  padding-left: 75px;
+}
+
+.autodor-page .our-achievements .item .text .title {
+  font-family: "Adelle Regular";
+  text-transform: uppercase;
+}
+
+.autodor-page .our-achievements .item .text .discr {
+  font-size: 14px;
+}
+/*# sourceMappingURL=site.css.map */
